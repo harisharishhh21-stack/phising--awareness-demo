@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.warning-banner {
+    background: #fff3cd;
+    color: #664d03;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 15px;
+}
+
+.login-card,
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #00000018;
+}
+
+.login-card {
+    width: 330px;
+    text-align: center;
+}
+
+.info-card {
+    width: 380px;
+}
+
+.brand {
+    margin-bottom: 15px;
+}
+
+.brand h1 {
+    color: #7b2cff;
+}
+
+.demo-label {
+    color: #5b20c7;
+    font-weight: bold;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 7px;
+    background: #7b2cff;
+    color: white;
+    font-weight: bold;
+}
+
+.secondary-btn {
+    background: #eee8ff;
+    color: #5b20c7;
+}
+
+.info-card li {
+    margin: 12px 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #00000088;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 750px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .login-card,
+    .info-card {
+        width: 90%;
+    }
+  }
